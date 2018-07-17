@@ -1,4 +1,4 @@
-nuage-remove-entity
+Ansible Role: nuage-remove-entity
 =========
 
 This role allows you to remove any entity on Nuage server by id.
