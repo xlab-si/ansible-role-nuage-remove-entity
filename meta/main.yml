@@ -1,4 +1,5 @@
 galaxy_info:
+  role_name: nuage_remove_entity
   author: miha-plesko
   company: XLAB d.o.o.
   license: BSD
