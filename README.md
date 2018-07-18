@@ -1,7 +1,7 @@
 Ansible Role: nuage-remove-entity
 =========
 
-This role allows you to remove any entity on Nuage server by id.
+This role allows you to remove any entity on Nuage server by ID.
 
 Requirements
 ------------
@@ -17,7 +17,7 @@ Role Variables
 |------------------|---------|-------------|
 | nuage_auth       | /       | Nuage authentication object, see example below.
 | entity_type      | /       | CamelCase name of entity that we're deleting e.g. Enterprise, Domain, Subnet, FloatingIp...
-| id               | /       | Id of entity that we're deleting.
+| id               | /       | ID of entity that we're deleting.
 
 Dependencies
 ------------
@@ -27,14 +27,10 @@ This role depends on no other Galaxy role.
 Example Playbook
 ----------------
 
-Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
+Example where we remove Subnet with ID `adbfcb81-e0ab-4b7e-9e51-1b6c5e862bb9`:
 
 ```yaml
-- hosts: servers
-  roles:
-     - { role: username.rolename, x: 42 }
-
-- hosts: servers
+- hosts: localhost
   connection: local
   gather_facts: False
   vars:
@@ -47,7 +43,7 @@ Including an example of how to use your role (for instance, with variables passe
     entity_type: Subnet
     id: adbfcb81-e0ab-4b7e-9e51-1b6c5e862bb9
   roles:
-    - nuage-remove-entity
+    - xlab_si.nuage_remove_entity
 ```
 
 License
